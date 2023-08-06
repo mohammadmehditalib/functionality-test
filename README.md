@@ -9,8 +9,8 @@ Steps for checking  functionality of an application
 - In url form  field add the url 'Assets/sample1.png' it will act as a image for product 
 - i am providing the url for this asset because this asset is already added in the project structure
 - if you tap on the tile of products in list view you will be navigated to the screen consisting name of that product.
-- I can also edit the details of product from firebase.
-- I can also delete the product from firebase.
+- I can also edit the details of product from firebase on pressing edit button on tile of listview.
+- I can also delete the product from firebase on pressing trash button of listview.
 
 
 
