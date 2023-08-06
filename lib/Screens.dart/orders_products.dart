@@ -23,7 +23,7 @@ class _OrderProductState extends State<OrderProduct> {
     final cartdata = Provider.of<Products>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('EDIT PRODUCTS'),
+        title: const Text('List of products '),
         actions: [
           GestureDetector(
             child: const Icon(Icons.add),
@@ -57,7 +57,7 @@ class _OrderProductState extends State<OrderProduct> {
                               },
                               child: ListTile(
                                   leading: Image.asset(productsl1[index].url),
-                                  title: Text(productsl1[index].description),
+                                  title: Text(productsl1[index].title),
                                   visualDensity: const VisualDensity(vertical: -4),
                                   subtitle: Padding(
                                     padding: const EdgeInsets.only(left: 200),

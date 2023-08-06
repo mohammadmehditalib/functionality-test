@@ -25,7 +25,7 @@ class _AddProductState extends State<AddProduct> {
     TextEditingController title = TextEditingController();
     TextEditingController price = TextEditingController();
     TextEditingController description = TextEditingController();
-    TextEditingController url = TextEditingController();
+    String url='Assets/sample2.png';
 
     return Scaffold(
         appBar: AppBar(
@@ -38,7 +38,7 @@ class _AddProductState extends State<AddProduct> {
                 child: Column(
                 children: [
                   TextFormField(
-                    decoration: const InputDecoration(hintText: 'Title'),
+                    decoration: const InputDecoration(hintText: 'Name of Product you want to add'),
                     controller: title,
                   ),
                   TextFormField(
@@ -49,10 +49,6 @@ class _AddProductState extends State<AddProduct> {
                     decoration: const InputDecoration(hintText: 'Description'),
                     controller: description,
                   ),
-                  TextFormField(
-                    decoration: const InputDecoration(hintText: 'Add url'),
-                    controller: url,
-                  ),
                   Padding(
                       padding: const EdgeInsets.only(top: 60),
                       child: ElevatedButton(
@@ -62,7 +58,7 @@ class _AddProductState extends State<AddProduct> {
                                 _loadingstate = true;
                               });
                               await products.addingDatabase(
-                                  title.text, description.text, price.text, url.text);
+                                  title.text, description.text, price.text, url);
                               setState(() {
                                 Navigator.pop(context);
                                 _loadingstate = true;

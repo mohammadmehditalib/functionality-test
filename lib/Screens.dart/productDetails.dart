@@ -20,7 +20,14 @@ class ProductDetails extends StatelessWidget {
       }
     }
     return Scaffold(
-      appBar: AppBar(title: Text(t)),
+      appBar: AppBar(title: const Text('PRODUCT DETAILS')),
+      body: Text('Name of Product ----->$t',
+      
+      style: const TextStyle(
+        color: Colors.black,
+        fontSize: 20
+      ),
+      ),
     );
   }
 }
