@@ -8,7 +8,7 @@ Steps for checking  functionality of an application
 - for adding the product to the database you have to enter all the deatils in textform filed 
 - In url form  field add the url 'Assets/sample1.png' it will act as a image for product 
 - i am providing the url for this asset because this asset is already added in the project structure
-
+- if you tap on the tile of products in list view you will be navigated to the screen consisting name of that product.
 
 
 
